@@ -1,0 +1,54 @@
+<%- include('partials/header'); -%>
+
+    <div class="container">
+        <h1> Registration Form</h1>
+        <div class="row">
+            <div class="col-sm-7">
+                <div class="card">
+                    <div class="card-body">
+                        <form action="/register" method="post">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">password</label>
+                                <input type="password" class="form-control" id="password" name="password">
+                            </div>
+                            <div class="forget">
+                                <button type="submit" class="btn btn-primary">Register</button>
+                                <button type="submit" class="btn btn-secondary">froget password</button>
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-sm-5">
+                <div class="card social-block">
+                    <div class="card-body" id="body">
+                        <a class="btn btn-danger" href="/auth/google" role="button">
+                            <i class="fa-brands fa-google-plus-g fa-2xl fa-beat"></i>Sign Up With Google
+                        </a>
+                    </div>
+                    <div class="card-body" id="body">
+                        <a class="btn btn-primary" href="/auth/google" role="button">
+                            <i class="fa-brands fa-square-facebook fa-beat-fade fa-2xl"></i>Sign Up With Facebook
+                        </a>
+                    </div>
+                    <div class="card-body" id="body">
+                        <a class="btn btn-secondary" href="/auth/google" role="button">
+                            <i class="fa-brands fa-linkedin fa-beat-fade fa-2xl"></i>Sign Up With Linkdin
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <%- include('partials/footer'); -%>
